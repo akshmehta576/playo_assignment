@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/black"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/text_headline_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_news"
+        android:layout_marginVertical="4dp"
+        android:fontFamily="serif"
+        android:text="Lorem ipsum dolor sit amet consectetur adi"
+        android:textColor="@color/textcolor"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_description_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_headline_news"
+        android:layout_marginVertical="4dp"
+        android:fontFamily="serif"
+        android:maxLines="3"
+        android:text="Washington - Sed ut perspiciatis un natus error sit voluptatem accusan ium doloremque laudan. sed quia consequuntur magni dolores eos ratione voluptatem sequi nesciunt."
+        android:textColor="@color/textcolor"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/text_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_description_news"
+        android:layout_marginVertical="4dp"
+        android:fontFamily="sans-serif"
+        android:text="Author name"
+        android:textColor="#C1C0BF"
+        android:textSize="18sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text_author"
+        android:background="@color/black" />
+</RelativeLayout>
